@@ -1,0 +1,48 @@
+.dropdown {
+    margin-bottom: 20px;
+    max-width: 1023px;
+}
+
+.dropdown-header {
+    background-color: #ff6060;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.dropdown-content {
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+.logement-dropdowns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1240px;
+    margin: 40px auto;
+    height: 30px;
+}
+.dropdown-header h2 {
+    font-size: 18px;
+}
+.logement-dropdowns .dropdown {
+    flex: 1;
+}
