@@ -1,0 +1,46 @@
+.carrousel {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  height: 415px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.carrousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.carrousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.carrousel .left {
+  left: 0;
+}
+
+.carrousel .right {
+  right: 0;
+}
+
+.carrousel .counter {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
