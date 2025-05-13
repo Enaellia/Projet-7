@@ -23,9 +23,12 @@ function Logement() {
                     <h1>{logement.title}</h1>
                     <p>{logement.location}</p>
                     <div className="logement-tags">
-                        {logement.tags.map((tag, index) => (
-                            <Tag key={index} label={tag} />
-                        ))}
+                        {logement.tags.map((tag, index) => {
+                            const isMobile = window.innerWidth <= 768;
+                            const label = isMobile ? tag.split(" ")[0] : tag;
+
+                            return <Tag key={index} label={label} />;
+                        })}
                     </div>
 
                 </div>

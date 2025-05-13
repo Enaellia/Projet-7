@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Carrousel.css";
+import "../styles/Carrousel.css";
 
 function Carrousel({ pictures }) {
   const [index, setIndex] = useState(0);
@@ -20,7 +20,7 @@ function Carrousel({ pictures }) {
           <button className="right" onClick={next}>›</button>
         </>
       )}
-      <img src={pictures[index]} alt={`Slide ${index + 1}`} />
+      <img src={pictures[index]} alt={`Slide ${index + 1}`} loading="lazy" />
       {pictures.length > 1 && (
         <div className="counter">
           {index + 1} / {pictures.length}

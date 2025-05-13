@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <img src="/footer.png" alt="Kasa logo" className="kasa" />
+      <img src="/footer-desktop.png" alt="Kasa logo" className="kasa" />
     </footer>
   );
 }

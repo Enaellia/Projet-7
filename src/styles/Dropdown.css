@@ -23,6 +23,10 @@
     margin-top: 5px;
 }
 
+.dropdown.open .dropdown-content {
+  max-height: 500px; /* ou auto avec scroll */
+}
+
 .arrow {
     transition: transform 0.3s ease;
     font-size: 1.2rem;

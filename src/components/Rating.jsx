@@ -1,4 +1,4 @@
-import "./Rating.css";
+import "../styles/Rating.css";
 
 function Rating({ rating }) {
   const totalStars = 5;

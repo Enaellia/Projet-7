@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Dropdown.css";
+import "../styles/Dropdown.css";
 
 function Dropdown({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
