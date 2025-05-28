@@ -1,8 +1,8 @@
-function Banner() {
+function Banner({ banniere, texte }) {
   return (
     <div className="banner">
-      <img src="/banner.jpg" alt="Bannière Kasa" />
-      <h1>Chez vous, partout et ailleurs</h1>
+      <img src={banniere} alt="Bannière Kasa" />
+      <h1>{texte}</h1>
     </div>
   );
 }

@@ -20,7 +20,7 @@ function Carrousel({ pictures }) {
           <button className="right" onClick={next}>›</button>
         </>
       )}
-      <img src={pictures[index]} alt={`Slide ${index + 1}`} loading="lazy" />
+      <img src={pictures[index]} alt={`Slide ${index + 1}`} />
       {pictures.length > 1 && (
         <div className="counter">
           {index + 1} / {pictures.length}

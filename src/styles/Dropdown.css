@@ -23,10 +23,6 @@
     margin-top: 5px;
 }
 
-.dropdown.open .dropdown-content {
-  max-height: 500px; /* ou auto avec scroll */
-}
-
 .arrow {
     transition: transform 0.3s ease;
     font-size: 1.2rem;
@@ -41,12 +37,26 @@
     justify-content: space-between;
     gap: 40px;
     max-width: 1240px;
-    margin: 40px auto;
-    height: 30px;
+    margin: 40px auto 0 auto;
 }
+
 .dropdown-header h2 {
     font-size: 18px;
 }
+
 .logement-dropdowns .dropdown {
     flex: 1;
+}
+
+.about-dropdowns {
+    max-width: 1023px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.about-dropdowns .dropdown {
+    margin-bottom: 0px;
 }

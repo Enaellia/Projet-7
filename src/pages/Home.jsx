@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <main>
-      <Banner />
+      <Banner banniere="/banner.jpg" texte="Chez vous, partout et ailleurs"/>
       <div className="gallery">
         {logements.map((logement) => (
           <Link key={logement.id} to={`/logement/${logement.id}`}>

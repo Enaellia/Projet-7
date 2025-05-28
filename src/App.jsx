@@ -4,6 +4,7 @@ import Logement from "./pages/Logement";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Error404 from "./pages/Error404";
+import About from "./pages/About";
 import "./styles/App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/logement/:id" element={<Logement />} />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
         </main>
